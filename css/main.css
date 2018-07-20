@@ -19,6 +19,7 @@ body {
 
 .wrapper {
   max-width: 1200px;
+  height: 100%;
   padding: 0 10px;
   margin: 0 auto;
 }
@@ -110,7 +111,7 @@ header a:hover {
   border-bottom: 2px solid #f68b1e;
 }
 
-header a:active {
+header a.active {
   border-bottom: 2px solid #f68b1e;
 }
 
@@ -234,7 +235,7 @@ footer a {
   height: 26px;
 }
 
-#home-top {
+.home-top {
   width: 100%;
   height: 650px;
   background: url(../images/home-top-bg.jpg) no-repeat center center;
@@ -253,12 +254,10 @@ footer a {
 }
 
 .investor-portal {
+  z-index: 9;
   position: absolute;
   right: -53px;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
+  top: 400px;
   width: 180px;
   height: 75px;
   background: #f68b1e;
@@ -324,7 +323,7 @@ footer a {
   margin-top: 40px;
 }
 
-#home-strategy {
+.home-strategy {
   padding: 70px 0 100px;
   background: url(../images/home-strategy-bg.png) no-repeat center right;
   background-size: cover;
@@ -337,12 +336,14 @@ footer a {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .ul-strategy-list li {
-  max-width: 380px;
-  width: 100%;
-  margin: 0 10px;
+  width: 31%;
+  margin: 0 5px;
+  margin-bottom: 120px;
 }
 
 .ul-strategy-list iframe {
@@ -362,6 +363,7 @@ footer a {
 }
 
 .content-title h3 {
+  padding: 0 40px;
   text-align: center;
   font-weight: 600;
   font-size: 24px;
@@ -379,13 +381,13 @@ footer a {
   line-height: 24px;
 }
 
-#home-slider {
+.home-slider {
   width: 100%;
   min-height: 400px;
   position: relative;
 }
 
-#home-slider .wrapper {
+.home-slider .wrapper {
   z-index: 2;
   position: absolute;
   max-width: 1200px;
@@ -531,12 +533,66 @@ footer a {
   margin-right: 30px;
 }
 
+.our-story-strategy {
+  padding-top: 120px;
+}
+
+.headline-section {
+  width: 100%;
+  height: 200px;
+}
+
+.headline-section .wrapper {
+  padding: 0 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+.headline-section-title {
+  min-width: 400px;
+  min-height: 100px;
+  padding: 0 30px;
+  background: rgba(67, 67, 67, 0.8);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.headline-section-title h2 {
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 36px;
+  line-height: 72px;
+  color: #ffffff;
+}
+
+.our-story-bg {
+  background: url(../images/our-story-bg.jpg) no-repeat center center;
+  background-size: cover;
+}
+
 @media screen and (max-width: 1200px) {
   .slick-arrow.slick-prev {
     left: -30px;
   }
   .slick-arrow.slick-next {
     right: -30px;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .ul-strategy-list li {
+    width: 45%;
   }
 }
 
@@ -550,19 +606,6 @@ footer a {
     height: 45px;
     font-size: 12px;
   }
-  .investor-portal {
-    top: 0;
-    -webkit-transform: rotate(0deg);
-    -ms-transform: rotate(0deg);
-    transform: rotate(0deg);
-    left: 0;
-    right: 0;
-    margin: auto;
-    height: 60px;
-  }
-  .investor-portal p {
-    font-size: 14px;
-  }
   .home-top-title {
     padding: 30px 20px;
     max-width: 500px;
@@ -574,12 +617,13 @@ footer a {
   .home-top-title-wrap h1 {
     font-size: 32px;
   }
-  #home-strategy {
+  .home-strategy {
     padding: 40px 0;
   }
+  .our-story-strategy {
+    padding-top: 120px;
+  }
   .ul-strategy-list {
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
@@ -587,8 +631,6 @@ footer a {
   .ul-strategy-list li {
     max-width: 380px;
     width: 100%;
-    margin: 0 10px;
-    margin-bottom: 40px;
   }
   .ul-strategy-list li:last-child {
     margin-bottom: 0;
@@ -596,7 +638,7 @@ footer a {
   .video-box {
     margin-bottom: 30px;
   }
-  #home-slider .wrapper {
+  .home-slider .wrapper {
     max-width: 550px;
     padding: 0 50px;
   }
@@ -635,7 +677,7 @@ footer a {
 }
 
 @media screen and (max-width: 375px) {
-  #home-top {
+  .home-top {
     height: 500px;
     padding: 0 10px;
   }

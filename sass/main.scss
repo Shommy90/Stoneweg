@@ -37,6 +37,7 @@ body {
 
 .wrapper {
   max-width: 1200px;
+  height: 100%;
   padding: 0 10px;
   margin: 0 auto;
 }
@@ -102,7 +103,7 @@ header {
     &:hover {
       border-bottom: 2px solid $color-primary;
     }
-    &:active {
+    &.active {
       border-bottom: 2px solid $color-primary;
     }
   }
@@ -212,7 +213,7 @@ footer {
 
 
 // HOME TOP
-#home-top {
+.home-top {
   width: 100%;
   height: 650px;
   background: url(../images/home-top-bg.jpg) no-repeat center center;
@@ -225,10 +226,10 @@ footer {
 }
 
 .investor-portal {
+  z-index: 9;
   position: absolute;
   right: -53px;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 400px;
   width: 180px;
   height: 75px;
   background: $color-primary;
@@ -285,7 +286,7 @@ footer {
 
 
 // HOME STRATEGY
-#home-strategy {
+.home-strategy {
   padding: 70px 0 100px;
   background: url(../images/home-strategy-bg.png) no-repeat center right;
   background-size: cover;
@@ -294,11 +295,12 @@ footer {
 .ul-strategy-list {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 
   li {
-    max-width: 380px;
-    width: 100%;
-    margin: 0 10px;
+    width: 31%;
+    margin: 0 5px;
+    margin-bottom: 120px;
   }
 
   iframe {
@@ -316,6 +318,7 @@ footer {
   min-height: 60px;
 
   h3 {
+    padding: 0 40px;
     text-align: center;
     font-weight: 600;
     font-size: 24px;
@@ -336,7 +339,7 @@ footer {
 
 
 // HOME SLIDER
-#home-slider {
+.home-slider {
   width: 100%;
   min-height: 400px;
   position: relative;
@@ -481,6 +484,48 @@ footer {
 }
 
 
+
+// OUR STORY
+.our-story-strategy {
+  padding-top: 120px;
+}
+
+.headline-section {
+  width: 100%;
+  height: 200px;
+
+  .wrapper {
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+}
+
+.headline-section-title {
+  min-width: 400px;
+  min-height: 100px;
+  padding: 0 30px;
+  background: rgba(67, 67, 67, 0.8);
+  display: flex;
+  align-items: center;
+
+  h2 {
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 72px;
+    color: $color-txt-white;
+  }
+}
+
+.our-story-bg {
+  background: url(../images/our-story-bg.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+
+
 @media screen and (max-width: 1200px) {
   .slick-arrow {
 
@@ -494,30 +539,23 @@ footer {
   }
 }
 
+@media screen and (max-width: 920px) {
+  .ul-strategy-list li {
+    width: 45%;
+  }
+}
+
 
 @media screen and (max-width: 768px) {
   header nav {
     display: none;
   }
-  
+
   .button {
     max-width: 150px;
     width: 100%;
     height: 45px;
     font-size: 12px;
-  }
-
-  .investor-portal {
-    top: 0;
-    transform: rotate(0deg);
-    left: 0;
-    right: 0;
-    margin: auto;
-    height: 60px;
-
-    p {
-      font-size: 14px;
-    }
   }
 
   .home-top-title {
@@ -534,19 +572,20 @@ footer {
     font-size: 32px;
   }
 
-  #home-strategy {
+  .home-strategy {
     padding: 40px 0;
   }
 
+  .our-story-strategy {
+    padding-top: 120px;
+  }
+
   .ul-strategy-list {
-    flex-wrap: wrap;
     justify-content: center;
 
     li {
       max-width: 380px;
       width: 100%;
-      margin: 0 10px;
-      margin-bottom: 40px;
 
       &:last-child {
         margin-bottom: 0;
@@ -558,7 +597,7 @@ footer {
     margin-bottom: 30px;
   }
 
-  #home-slider .wrapper {
+  .home-slider .wrapper {
     max-width: 550px;
     padding: 0 50px;
   }
@@ -606,7 +645,7 @@ footer {
 
 
 @media screen and (max-width: 375px) {
-  #home-top {
+  .home-top {
     height: 500px;
     padding: 0 10px;
   }
