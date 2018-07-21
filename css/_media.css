@@ -1,0 +1,114 @@
+@media screen and (max-width: 1200px) {
+  .slick-arrow.slick-prev {
+    left: -30px; }
+  .slick-arrow.slick-next {
+    right: -30px; } }
+
+@media screen and (max-width: 920px) {
+  .ul-strategy-list li {
+    width: 45%; } }
+
+@media screen and (max-width: 768px) {
+  header nav {
+    display: none; }
+  .button {
+    max-width: 150px;
+    width: 100%;
+    height: 45px;
+    font-size: 12px; }
+  .home-top-title {
+    padding: 30px 20px;
+    max-width: 500px;
+    width: 100%; }
+  .home-top-title-wrap h3 {
+    font-size: 28px; }
+  .home-top-title-wrap h1 {
+    font-size: 32px; }
+  .home-strategy {
+    padding: 40px 0; }
+  .our-story-strategy {
+    padding-top: 120px; }
+  .ul-strategy-list {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+    .ul-strategy-list li {
+      max-width: 380px;
+      width: 100%; }
+      .ul-strategy-list li:last-child {
+        margin-bottom: 0; }
+  .video-box {
+    margin-bottom: 30px; }
+  .home-slider .wrapper {
+    max-width: 550px;
+    padding: 0 50px; }
+  .slider-title h3 {
+    font-size: 18px;
+    line-height: 20px; }
+  .slider-title p {
+    font-size: 10px; }
+  .slider-content p {
+    font-size: 16px; }
+  .investors {
+    padding: 30px 0; }
+  .investors-content {
+    text-align: center; }
+  .investors-content h4 {
+    font-size: 20px; }
+  .investors-content p {
+    font-size: 16px;
+    line-height: 24px; }
+  .investors-btns {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+  .home-slider-bg {
+    max-width: 550px;
+    width: 100%; } }
+
+@media screen and (max-width: 375px) {
+  .home-top {
+    height: 500px;
+    padding: 0 10px; }
+  .home-top-title-wrap h3 {
+    font-size: 22px;
+    line-height: 32px; }
+  .home-top-title-wrap h1 {
+    font-size: 26px; }
+  .content-title {
+    min-height: 50px; }
+  .content-title h3 {
+    font-size: 20px; }
+  .content-txt p {
+    font-size: 18px; }
+  .content-txt {
+    min-height: 80px; }
+  .slider-title {
+    margin-bottom: 10px; }
+  .slider-title h3 {
+    font-size: 14px;
+    line-height: 16px;
+    margin-bottom: 10px; }
+  .slider-content {
+    margin-bottom: 10px; }
+  .slider-content p {
+    font-size: 12px;
+    font-weight: 400; }
+  .investors-content p {
+    font-size: 14px; }
+  .logo-footer {
+    margin-bottom: 30px; }
+  .nav-footer ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+  .nav-footer li {
+    text-align: center;
+    margin-bottom: 10px; }
+  footer {
+    height: auto; }
+  .nav-footer {
+    margin-bottom: 30px; }
+  .socials-footer {
+    margin-bottom: 30px; } }

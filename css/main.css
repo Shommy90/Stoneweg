@@ -12,6 +12,7 @@ a {
 
 body {
   font-size: 18px;
+  line-height: 24px;
   color: #1b1b1b;
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
@@ -19,6 +20,7 @@ body {
 
 .wrapper {
   max-width: 1200px;
+  width: 100%;
   height: 100%;
   padding: 0 10px;
   margin: 0 auto;
@@ -65,6 +67,13 @@ body {
   background: #2a2a2a;
 }
 
+.section-title {
+  font-size: 24px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #f68b1e;
+}
+
 header {
   width: 100%;
   background: #fff;
@@ -105,18 +114,21 @@ header a {
   color: #434343;
   padding: 10px 0;
   text-transform: uppercase;
+  position: relative;
 }
 
-header a:hover {
-  border-bottom: 2px solid #f68b1e;
+header a.active::after, header a:hover::after {
+  position: absolute;
+  content: '';
+  width: 84px;
+  height: 2px;
+  background: #f68b1e;
+  left: 0;
+  bottom: 0;
 }
 
-header a.active {
-  border-bottom: 2px solid #f68b1e;
-}
-
-header a.logo-link:hover {
-  border: none;
+header a.logo-link:hover::after {
+  height: 0;
 }
 
 footer {
@@ -316,6 +328,7 @@ footer a {
 
 .home-top-title-wrap h1 {
   font-size: 72px;
+  line-height: 72px;
   font-weight: 600;
 }
 
@@ -507,11 +520,6 @@ footer a {
   width: 100%;
 }
 
-.investors-content h4 {
-  font-size: 24px;
-  color: #f68b1e;
-}
-
 .investors-content p {
   font-weight: 300;
   line-height: 24px;
@@ -579,6 +587,113 @@ footer a {
 .our-story-bg {
   background: url(../images/our-story-bg.jpg) no-repeat center center;
   background-size: cover;
+}
+
+.our-dna-bg {
+  background: url(../images/our-dna-bg.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+.who-we-are {
+  background: url(../images/home-strategy-bg.png) no-repeat center right;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-height: 400px;
+}
+
+.who-we-are-inner {
+  max-width: 670px;
+  width: 100%;
+}
+
+.who-we-are-inner .section-title {
+  margin-bottom: 35px;
+}
+
+.who-we-are-inner p {
+  margin-bottom: 50px;
+}
+
+.who-we-are-inner .button {
+  margin: 0;
+}
+
+.core-values {
+  background-color: #f68b1e;
+  background: url(../images/core-values-bg.png) no-repeat center right;
+  background-size: cover;
+  min-height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.core-values .wrapper {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.core-values-inner {
+  max-width: 670px;
+  width: 100%;
+  text-align: right;
+}
+
+.core-values-inner .section-title {
+  color: #ffffff;
+  margin-bottom: 35px;
+}
+
+.core-values-inner p {
+  margin-bottom: 50px;
+}
+
+.core-values-inner .button {
+  margin: 0;
+  float: right;
+}
+
+.added-value {
+  width: 100%;
+  min-height: 400px;
+  background: url(../images/added-value-bg.jpg) no-repeat center left;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.added-value .section-title {
+  color: #f68b1e;
+}
+
+.added-value .wrapper {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 @media screen and (max-width: 1200px) {

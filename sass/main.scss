@@ -30,6 +30,7 @@ a {
 
 body {
   font-size: 18px;
+  line-height: 24px;
   color: $color-txt;
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
@@ -37,6 +38,7 @@ body {
 
 .wrapper {
   max-width: 1200px;
+  width: 100%;
   height: 100%;
   padding: 0 10px;
   margin: 0 auto;
@@ -65,6 +67,13 @@ body {
 .btn-grey {
   background: $color-grey-light;
   @include hover-btn($color-grey-light);
+}
+
+.section-title {
+  font-size: 24px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #f68b1e;
 }
 
 
@@ -99,17 +108,24 @@ header {
     color: $color-grey-light;
     padding: 10px 0;
     text-transform: uppercase;
+    position: relative;
 
-    &:hover {
-      border-bottom: 2px solid $color-primary;
-    }
-    &.active {
-      border-bottom: 2px solid $color-primary;
+    &.active, &:hover {
+      &::after {
+        position: absolute;
+        content: '';
+        width: 84px;
+        height: 2px;
+        background: $color-primary;
+        left: 0;
+        bottom: 0;
+      }
     }
   }
+
   a.logo-link {
-    &:hover {
-      border: none;
+    &:hover::after {
+      height: 0;
     }
   }
 }
@@ -276,6 +292,7 @@ footer {
 
   h1 {
     font-size: 72px;
+    line-height: 72px;
     font-weight: 600;
   }
 }
@@ -458,11 +475,6 @@ footer {
   max-width: 760px;
   width: 100%;
 
-  h4 {
-    font-size: 24px;
-    color: $color-primary;
-  }
-
   p {
     font-weight: 300;
     line-height: 24px;
@@ -525,201 +537,100 @@ footer {
 }
 
 
-
-@media screen and (max-width: 1200px) {
-  .slick-arrow {
-
-    &.slick-prev {
-      left: -30px;
-    }
-
-    &.slick-next {
-      right: -30px;
-    }
-  }
+// OUR DNA
+.our-dna-bg {
+  background: url(../images/our-dna-bg.jpg) no-repeat center center;
+  background-size: cover;
 }
 
-@media screen and (max-width: 920px) {
-  .ul-strategy-list li {
-    width: 45%;
-  }
+.who-we-are {
+  background: url(../images/home-strategy-bg.png) no-repeat center right;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  min-height: 400px;
 }
 
+.who-we-are-inner {
+  max-width: 670px;
+  width: 100%;
 
-@media screen and (max-width: 768px) {
-  header nav {
-    display: none;
+  .section-title {
+    margin-bottom: 35px;
+  }
+
+  p {
+    margin-bottom: 50px;
   }
 
   .button {
-    max-width: 150px;
-    width: 100%;
-    height: 45px;
-    font-size: 12px;
+    margin: 0;
+  }
+}
+
+
+// CORE VALUES
+.core-values {
+  background-color: $color-primary;
+  background: url(../images/core-values-bg.png) no-repeat center right;
+  background-size: cover;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+
+  .wrapper {
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+.core-values-inner {
+  max-width: 670px;
+  width: 100%;
+  text-align: right;
+
+  .section-title {
+    color: $color-txt-white;
+    margin-bottom: 35px;
   }
 
-  .home-top-title {
-    padding: 30px 20px;
-    max-width: 500px;
-    width: 100%;
+  p {
+    margin-bottom: 50px;
   }
 
-  .home-top-title-wrap h3 {
-    font-size: 28px;
+  .button {
+    margin: 0;
+    float: right;
+  }
+}
+
+.added-value {
+  width: 100%;
+  min-height: 400px;
+  background: url(../images/added-value-bg.jpg) no-repeat center left;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+
+  .section-title {
+    color: $color-primary;
   }
 
-  .home-top-title-wrap h1 {
-    font-size: 32px;
+  .wrapper {
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
   }
-
-  .home-strategy {
-    padding: 40px 0;
-  }
-
-  .our-story-strategy {
-    padding-top: 120px;
-  }
-
-  .ul-strategy-list {
-    justify-content: center;
-
-    li {
-      max-width: 380px;
-      width: 100%;
-
-      &:last-child {
-        margin-bottom: 0;
-      }
-    }
-  }
-
-  .video-box {
-    margin-bottom: 30px;
-  }
-
-  .home-slider .wrapper {
-    max-width: 550px;
-    padding: 0 50px;
-  }
-
-  .slider-title h3 {
-    font-size: 18px;
-    line-height: 20px;
-  }
-
-  .slider-title p {
-    font-size: 10px;
-  }
-
-  .slider-content p {
-    font-size: 16px;
-  }
-
-  .investors {
-    padding: 30px 0;
-  }
-
-  .investors-content {
-    text-align: center;
-  }
-
-  .investors-content h4 {
-    font-size: 20px;
-  }
-
-  .investors-content p {
-    font-size: 16px;
-    line-height: 24px;
-  }
-
-  .investors-btns {
-    justify-content: center;
-  }
-
-  .home-slider-bg {
-    max-width: 550px;
-    width: 100%;
-  }
-
 }
 
 
-@media screen and (max-width: 375px) {
-  .home-top {
-    height: 500px;
-    padding: 0 10px;
-  }
 
-  .home-top-title-wrap h3 {
-    font-size: 22px;
-    line-height: 32px;
-  }
 
-  .home-top-title-wrap h1 {
-    font-size: 26px;
-  }
 
-  .content-title {
-    min-height: 50px;
-  }
 
-  .content-title h3 {
-    font-size: 20px;
-  }
 
-  .content-txt p {
-    font-size: 18px;
-  }
 
-  .content-txt {
-    min-height: 80px;
-  }
 
-  .slider-title {
-    margin-bottom: 10px;
-  }
-
-  .slider-title h3 {
-    font-size: 14px;
-    line-height: 16px;
-    margin-bottom: 10px;
-  }
-
-  .slider-content {
-    margin-bottom: 10px;
-  }
-
-  .slider-content p {
-    font-size: 12px;
-    font-weight: 400;
-  }
-
-  .investors-content p {
-    font-size: 14px;
-  }
-
-  .logo-footer {
-    margin-bottom: 30px;
-  }
-
-  .nav-footer ul {
-    flex-direction: column;
-  }
-
-  .nav-footer li {
-    text-align: center;
-    margin-bottom: 10px;
-  }
-
-  footer {
-    height: auto;
-  }
-
-  .nav-footer {
-    margin-bottom: 30px;
-  }
-
-  .socials-footer {
-    margin-bottom: 30px;
-  }
-}
+@import 'media';
