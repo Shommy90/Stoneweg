@@ -1,18 +1,15 @@
 $(document).ready(function(){
 
+// SLIDER HOME
   $('.slider').slick({
       autoplay: true,
       arrows: true
   });
 
 
-});
-
-
-$(document).ready(function(){
-
-  $('.slider-designs').slick({
-      slidesToShow: 1,
+// SLIDER NEWS
+  $('.slider-news').slick({
+      slidesToShow: 2,
       slidesToScroll: 1,
       autoplay: true,
       autoplaySpeed: 2000,

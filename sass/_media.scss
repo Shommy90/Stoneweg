@@ -4,14 +4,16 @@
 
 
 @media screen and (max-width: 1200px) {
-  .slick-arrow {
+  .slider {
+    .slick-arrow {
 
-    &.slick-prev {
-      left: -30px;
-    }
+      &.slick-prev {
+        left: -30px;
+      }
 
-    &.slick-next {
-      right: -30px;
+      &.slick-next {
+        right: -30px;
+      }
     }
   }
 }
