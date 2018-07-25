@@ -1047,6 +1047,76 @@ footer {
 }
 
 
+// CONTACT
+
+.contact-bg {
+  background: url(../images/contact-bg.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+.contact {
+  background: url(../images/home-strategy-bg.png) no-repeat bottom right;
+  padding: 70px 0 230px;
+}
+
+.contact-wrapper {
+  max-width: 820px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.fill-out {
+  text-align: center;
+}
+
+.contact-form {
+  max-width: 500px;
+  width: 100%;
+  padding: 0 10px;
+  margin: 0 auto;
+  margin-top: 100px;
+  margin-bottom: 170px;
+
+  li {
+    margin-bottom: 45px;
+  }
+
+  input,
+  textarea {
+    border: none;
+    border-bottom: 2px solid $color-grey-light;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+
+    &::placeholder {
+      font-style: italic;
+      font-size: 18px;
+      font-weight: 300;
+    }
+  }
+
+  textarea {
+    resize: none;
+  }
+
+  button {
+    margin: 0 auto;
+  }
+}
+
+.form-checkbox {
+  display: flex;
+
+  label {
+    font-size: 14px;
+  }
+}
+
+
+
 
 
 
