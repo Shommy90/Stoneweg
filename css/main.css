@@ -1015,6 +1015,126 @@ footer a {
   text-align: right;
 }
 
+.section-sub-title {
+  max-width: 680px;
+  width: 100%;
+  padding: 0 10px;
+  margin-left: 50px;
+}
+
+.dna-single-content {
+  max-width: 720px;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  padding: 20px 0;
+}
+
+.dna-single-content .share-box-socials {
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+.dna-contact {
+  padding: 40px;
+  background: #434343;
+  color: #ffffff;
+  text-align: center;
+}
+
+.dna-contact .more {
+  margin-bottom: 20px;
+  font-weight: 300;
+}
+
+.dna-contact .dna-contact-number, .dna-contact .dna-contact-email a {
+  font-size: 22px;
+  line-height: 24px;
+  color: #f68b1e;
+  font-weight: 500;
+  margin-bottom: 35px;
+}
+
+.dna-contact .dna-or {
+  margin-bottom: 10px;
+  font-weight: 300;
+}
+
+.dna-contact .dna-contact-email {
+  margin-bottom: 35px;
+}
+
+.dna-contact .dna-contact-help {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.dna-single-video {
+  max-width: 720px;
+  width: 100%;
+  height: 480px;
+}
+
+.dna-single-split {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.split-left,
+.split-right {
+  width: 50%;
+  padding: 0 20px;
+  min-height: 180px;
+}
+
+.split-left p {
+  text-align: right;
+}
+
+.split-right {
+  border-left: 4px solid #f68b1e;
+}
+
+.split-right p {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 30px;
+  color: #f68b1e;
+}
+
+.dna-single-site {
+  text-align: center;
+  padding: 0 20px;
+}
+
+.dna-single-site p {
+  margin-bottom: 30px;
+}
+
+.dna-single-site p.more-info {
+  font-size: 14px;
+}
+
+.dna-single-site a {
+  color: #f68b1e;
+}
+
+.dna-single-btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.dna-single-btns button {
+  margin: 0 10px;
+}
+
 @media screen and (max-width: 1200px) {
   .slider .slick-arrow.slick-prev {
     left: -30px;
