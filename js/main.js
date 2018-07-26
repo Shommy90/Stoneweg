@@ -17,4 +17,18 @@ $(document).ready(function(){
   });
 
 
+  // MODAL
+  $('.modal-btn').on('click', function() {
+      var modal = $(this).data('modal');
+      $(modal).show();
+  });
+
+  $('.modal').on('click', function(e) {
+      var className = e.target.className;
+      if(className === 'modal' || className === 'modal-close') {
+        $(this).closest('.modal').hide();
+      }
+  });
+
+
 });
