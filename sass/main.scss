@@ -1080,6 +1080,10 @@ footer {
 
   li {
     margin-bottom: 45px;
+
+    &.form-checkbox {
+      margin-bottom: 80px;
+    }
   }
 
   input,
@@ -1110,11 +1114,88 @@ footer {
 .form-checkbox {
   display: flex;
 
+  input {
+    display: none;
+  }
+
   label {
     font-size: 14px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+    span {
+      margin-left: 15px;
+    }
+
+    &::before {
+      content: '\2714';
+      display: block;
+      width: 30px;
+      height: 30px;
+      border: 2px solid $color-grey-light;
+      box-sizing: border-box;
+      color: transparent;
+    }
   }
 }
 
+input[type="checkbox"]:checked + label::before {
+  color: $color-primary;
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.map-address {
+  max-width: 800px;
+  width: 100%;
+  display: flex;
+
+  .map {
+    width: 50%;
+    height: 400px;
+  }
+
+  .address {
+    width: 50%;
+    height: 400px;
+    background: $color-primary;
+    color: $color-txt-white;
+    padding: 50px 30px;
+
+    p {
+      padding-left: 40px;
+      position: relative;
+      margin-bottom: 25px;
+
+      &.p-address::before {
+        content: '';
+        position: absolute;
+        width: 25px;
+        height: 25px;
+        left: 0;
+        background: url(../images/address-location.png) no-repeat center left;
+      }
+
+      &.p-phone::before {
+        @extend .p-address::before;
+        background: url(../images/address-phone.png) no-repeat center left;
+      }
+
+      &.p-email::before {
+        @extend .p-address::before;
+        background: url(../images/address-email.png) no-repeat center left;
+      }
+    }
+
+    a {
+      color: $color-txt-white;
+      font-size: 18px;
+    }
+  }
+}
 
 
 

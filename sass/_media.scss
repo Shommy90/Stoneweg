@@ -16,6 +16,21 @@
       }
     }
   }
+
+  .investor-portal {
+    top: 165px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .news-single .wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .news-single-left {
+    margin-bottom: 50px;
+  }
 }
 
 @media screen and (max-width: 920px) {
@@ -28,6 +43,21 @@
 @media screen and (max-width: 768px) {
   header nav {
     display: none;
+  }
+
+  .investor-portal {
+    display: none;
+    transform: rotate(0deg);
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 290px;
+  }
+
+  .headline-section-title {
+    min-width: 0;
+    max-width: 400px;
+    width: 100%;
   }
 
   .button {
@@ -123,7 +153,7 @@
 }
 
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 576px) {
   .home-top {
     height: 500px;
     padding: 0 10px;
@@ -201,4 +231,131 @@
   .socials-footer {
     margin-bottom: 30px;
   }
+
+  .headline-section-title h2 {
+    font-size: 28px;
+    line-height: 34px;
+  }
+
+  .who-we-are-inner {
+    text-align: center;
+
+    .button {
+      margin: 0 auto;
+    }
+  }
+
+  .core-values-inner {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .news-title {
+    text-align: center;
+    font-size: 28px;
+    line-height: 34px;
+  }
+
+  .news-title-wrap .slider-cont-date {
+    text-align: center;
+  }
+
+  .news-more-about {
+    flex-direction: column;
+  }
+
+  .more-about-txt {
+    padding: 0;
+    margin: 0 auto;
+    text-align: center;
+
+    .button {
+      margin: 0 auto;
+    }
+  }
+
+  .news-list-wrap .button {
+    margin: 0 auto;
+  }
+
+  .news-list-title h4 {
+    text-align: center;
+  }
+
+  .news-left-img {
+    height: auto;
+  }
+
+  .news-left-content {
+    text-align: center;
+  }
+
+  .news-single {
+    padding-bottom: 50px;
+  }
+
+  .news-list {
+    margin-bottom: 0;
+  }
+
+  .slider-news-txt {
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .section-sub-title {
+    margin-left: 10px;
+
+    p {
+      font-size: 14px;
+      line-height: 16px;
+    }
+  }
+
+  .headline-section {
+    height: 230px;
+  }
+
+  .headline-section .wrapper.with-txt {
+    flex-direction: column;
+  }
+
+  .section-sub-title {
+    padding: 10px;
+    text-align: center;
+  }
+
+  .split-left,
+  .split-right {
+    padding: 0 5px;
+
+    p {
+      font-size: 14px;
+      line-height: 16px;
+    }
+  }
+
+  .dna-contact {
+    padding: 20px 10px;
+  }
+
+  .map-address {
+    flex-direction: column;
+
+    .map,
+    .address {
+      width: 100%;
+    }
+
+    .address {
+      padding: 50px 15px;
+    }
+
+    p {
+      font-size: 14px;
+    }
+  }
+
 }

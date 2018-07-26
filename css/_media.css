@@ -1,7 +1,7 @@
 @media screen and (max-width: 1200px) {
-  .slick-arrow.slick-prev {
+  .slider .slick-arrow.slick-prev {
     left: -30px; }
-  .slick-arrow.slick-next {
+  .slider .slick-arrow.slick-next {
     right: -30px; } }
 
 @media screen and (max-width: 920px) {
